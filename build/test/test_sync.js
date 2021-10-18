@@ -52,7 +52,7 @@ function main() {
                     return [4 /*yield*/, jocker_1.Jocker.getJoke()["catch"](console.log)];
                 case 2:
                     joke = _a.sent();
-                    console.log(joke);
+                    console.log(joke + '\n\n');
                     _a.label = 3;
                 case 3:
                     i++;

@@ -69,7 +69,7 @@ var Jocker = /** @class */ (function () {
                         resolve(data);
                     }
                     else {
-                        reject("incorrect_category");
+                        reject('incorrect_category');
                     }
                 });
                 res.on('error', function (err) {
