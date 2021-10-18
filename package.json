@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build"     : "tsc",
+    "test_sync" : "node build/test/test_sync.js",
+    "test_async": "node build/test/test_async.js",
+    "jocker"    : "node build/index.js"
   },
   "author": "1Lua",
   "license": "ISC",
