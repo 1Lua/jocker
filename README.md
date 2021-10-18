@@ -16,9 +16,7 @@ This has two tests of getting the Nth number of jokes: synchronous and asynchron
 
 Run synchronous test:
 ```bash
-cd test
-tsc test_sync.ts
-node test_sync.js
+npm run test_sync
 ```
 Example output:
 ```text
@@ -28,9 +26,7 @@ default: 4256.205ms
 
 Run asynchronous test:
 ```bash
-cd test
-tsc test_async.ts
-node test_async.js
+npm run test_async
 ```
 Example output:
 ```text
@@ -45,7 +41,7 @@ Getting jokes in asynchronous mode is much faster than in synchronous mode.
 
 You need use parameter --category (-c) with value 'Any':
 ```bash
-node index -c Any
+npm run jocker -- -c Any
 ```
 Example output:
 ```text
@@ -57,7 +53,7 @@ I've got a really good UDP joke to tell you but I don’t know if you'll get it.
 Resource jokeapi.api can provide jokes in the specified categories: 
 You need use parameter --category (-c) with relevant value:
 ```bash
-node index -c Programming
+npm run jocker -- -c Programming
 ```
 Example output:
 ```text
@@ -68,7 +64,7 @@ Goodbye, world!
 
 If you specify a non-existent category, the program will display a list of possible categories
 ```bash
-node index -c Git
+npm run jocker -- -c Git
 ```
 
 Example output:
@@ -83,4 +79,6 @@ Example output:
 git clone https://github.com/1Lua/jocker.git
 
 npm install
+
+npm run build
 ```
